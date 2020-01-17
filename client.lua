@@ -1,4 +1,4 @@
-ESX                             = nil
+ESX = nil
 
 Citizen.CreateThread(function()
   while ESX == nil do
@@ -6,7 +6,6 @@ Citizen.CreateThread(function()
     Citizen.Wait(0)
   end
 end)
-
 
 local start = false
 local inGas = false
@@ -68,7 +67,6 @@ function caPique()
   start=false
 end
 
-
 Citizen.CreateThread(function()
    while true
     do
@@ -101,5 +99,4 @@ Citizen.CreateThread(function()
       ClearEntityLastDamageEntity(GetPlayerPed(-1))
       Citizen.Wait(1)
    end
-
 end)
